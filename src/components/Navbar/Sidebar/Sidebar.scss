@@ -5,12 +5,15 @@
     justify-content: center;
     background-color: white;
     color: black;
+    
 
     .bg{
+        z-index: 999;
         position: fixed;
         top: 0;
         left: 0;
-        width: 500px;
+        bottom: 0;
+        width: 450px;
         background: rgb(217, 211, 211);
 
         .links{
@@ -30,13 +33,16 @@
     }
 
     button{
+        z-index: 999;
+        position: fixed;
         width: 50px;
         height: 50px;
         border-radius: 50%;
         position: fixed;
-        top: 25px;
-        height: 25px;
+        top: 28px;
+        left: 25px;
         background-color: transparent;
         border: none ;
+        cursor: pointer;
     }
 }
