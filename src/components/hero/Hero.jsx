@@ -63,7 +63,12 @@ function Hero() {
           // animate="animate"
           whileInView="animate"
         >
-          <motion.h2 variants={textVariants}>AKASH PAUL</motion.h2>
+          <motion.h2
+            variants={textVariants}
+            className=" shadow-white underline-offset-0!important"
+          >
+            AKASH PAUL
+          </motion.h2>
           <motion.h1 variants={textVariants}>
             Full Stack Web Developer and Digital Marketing Services
           </motion.h1>
