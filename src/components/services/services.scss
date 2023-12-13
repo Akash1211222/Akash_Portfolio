@@ -1,11 +1,13 @@
 .services{
     background: linear-gradient(180deg, #0c0c1d, #1c1c53);
+    background-color: #181847;
     background-image: url("/public/stars.png");
     height: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    cursor: default;
     // z-index: 7;
 
     .textContainer{
