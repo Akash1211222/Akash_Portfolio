@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const imgVariants = {
   initial: {
-    z: -500,
+    z: -200,
     opacity: 0,
   },
   animate: {
@@ -18,7 +18,7 @@ const imgVariants = {
 };
 const textVariants = {
   initial: {
-    x: -500,
+    x: -200,
     opacity: 0,
   },
   animate: {

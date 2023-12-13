@@ -1,3 +1,6 @@
+@import "../../../app.scss";
+
+
 .sidebar{
     display: flex;
     flex-direction: column;
@@ -7,6 +10,7 @@
     color: black;
     
 
+
     .bg{
         z-index: 999;
         position: fixed;
@@ -15,6 +19,8 @@
         bottom: 0;
         width: 450px;
         background: rgb(217, 211, 211);
+
+
 
         .links{
             position: absolute;

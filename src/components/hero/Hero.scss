@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .hero{
     height: calc(100vh - 100px);
     background: linear-gradient(180deg, #0c0c1d, #1c1c53);
@@ -17,6 +19,16 @@
             flex-direction: column;
             justify-content: center;
             gap: 40px;
+            // z-index: 2;
+
+            @include mobile{
+                height: 50%;
+                width: 100%;
+                gap: 20px;
+                align-items: center;
+                text-align: center;
+                z-index: 2;
+            }
 
             h2{
                 font-size: 40px;
@@ -26,6 +38,10 @@
 
             h1{
                 font-size: 88px;
+
+                @include mobile{
+                    font-size: 36px;
+                }
             }
             .buttons{
                 button{
@@ -52,8 +68,21 @@
         position: absolute;
         top: 0;
         right: 0;
-        bottom: 0;
-        opacity: 30;
+        z-index: 1;
+
+        @include mobile{
+            height: 60%;
+            width: 100%;
+            top: unset;
+            bottom: 0;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            // z-index: 3;
+        }
     }
 
     .slidingTextContainer{

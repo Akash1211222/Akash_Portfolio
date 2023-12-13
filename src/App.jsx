@@ -10,6 +10,7 @@ import Contact from "./components/contact/Contact";
 const App = () => {
   return (
     <>
+      <Cursor />
       <section id="Homepage">
         <Navbar />
         <Hero />
