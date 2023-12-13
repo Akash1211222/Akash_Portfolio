@@ -2,6 +2,20 @@ import React from "react";
 import "./Hero.scss";
 import { motion } from "framer-motion";
 
+const imgVariants = {
+  initial: {
+    z: -500,
+    opacity: 0,
+  },
+  animate: {
+    z: 0,
+    opacity: 1,
+    transition: {
+      duration: 1.5,
+      staggerChildren: 0.1,
+    },
+  },
+};
 const textVariants = {
   initial: {
     x: -500,
@@ -46,11 +60,12 @@ function Hero() {
           className="textContainer"
           variants={textVariants}
           initial="initial"
-          animate="animate"
+          // animate="animate"
+          whileInView="animate"
         >
           <motion.h2 variants={textVariants}>AKASH PAUL</motion.h2>
           <motion.h1 variants={textVariants}>
-            Full Stack Web Developer
+            Full Stack Web Developer and Digital Marketing Services
           </motion.h1>
           <motion.div variants={textVariants} className="buttons">
             <motion.button variants={textVariants}>
@@ -74,9 +89,15 @@ function Hero() {
       >
         Writer Devloper Creater
       </motion.div>
-      <div className="imageContainer">
-        <motion.img variants={textVariants} src="/hero.png" alt="" />
-      </div>
+      <motion.div
+        className="imageContainer"
+        variants={imgVariants}
+        initial="initial"
+        // animate="animate"
+        whileInView="animate"
+      >
+        <motion.img variants={imgVariants} src="/me.png" alt="" />
+      </motion.div>
     </div>
   );
 }
